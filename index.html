@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FORMA architectural bureau portfolio">
+  <title>FORMA — Architectural Bureau</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-switch" class="theme-toggle">
+
+  <div class="site">
+    <header class="site-header">
+      <a class="logo" href="#home">FORMA<span>.</span></a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+
+      <details class="mobile-menu">
+        <summary aria-label="Open navigation menu">☰</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#contacts">Contacts</a>
+        </nav>
+      </details>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img class="hero-image"
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800"
+          alt="Modern architectural residence">
+        <div class="hero-content">
+          <p class="eyebrow">ARCHITECTURAL STUDIO / EST. 2026</p>
+          <h1>Designing Space<br>for Living.</h1>
+          <p>Timeless architecture. Thoughtful spaces. Extraordinary living.</p>
+          <a class="btn" href="#projects">Explore Projects ↗</a>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">01 / PORTFOLIO</p>
+          <h2>Selected Projects</h2>
+          <p>A collection of architectural concepts.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card card-large">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+              alt="Contemporary house design">
+            <div class="project-info">
+              <h3>01 / Dune Residence</h3>
+              <p>Almaty, Kazakhstan · 2025 · 450 m²</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900"
+              alt="Minimalist interior architecture">
+            <div class="project-info">
+              <h3>02 / Atrium House</h3>
+              <p>Astana, Kazakhstan · 2024 · 320 m²</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900"
+              alt="Elegant contemporary space">
+            <div class="project-info">
+              <h3>03 / Quiet Courtyard</h3>
+              <p>Shymkent, Kazakhstan · 2026 · 280 m²</p>
+            </div>
+          </article>
+        </div>
+        <p class="note">Projects shown are demonstration concepts.</p>
+      </section>
+
+      <section class="services section" id="services">
+        <p class="eyebrow">02 / EXPERTISE</p>
+        <h2>What We Do</h2>
+        <div class="services-grid">
+          <article>
+            <span>01</span>
+            <h3>Architecture</h3>
+            <p>Residential and commercial building concepts.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Interior Design</h3>
+            <p>Functional, elegant and comfortable interiors.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Planning</h3>
+            <p>Site surveying, analysis and project development.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="philosophy section" id="philosophy">
+        <p class="eyebrow">03 / OUR PHILOSOPHY</p>
+        <h2>Less noise.<br>More meaning.</h2>
+        <p>We believe architecture should connect people,
+        nature and the spaces we inhabit. Every detail matters.</p>
+      </section>
+
+      <section class="contact section" id="contacts">
+        <div class="contact-intro">
+          <p class="eyebrow">04 / CONTACT</p>
+          <h2>Let's build<br>something great.</h2>
+          <p>Tell us about your future project.</p>
+        </div>
+
+        <form action="#contacts" method="get">
+          <label for="name">Full Name *</label>
+          <input id="name" name="name" type="text"
+            placeholder="Your name" minlength="2" required>
+
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email"
+            placeholder="example@email.com" required>
+
+          <label for="phone">Phone Number *</label>
+          <input id="phone" name="phone" type="tel"
+            placeholder="+7 777 123 45 67"
+            pattern="[0-9+() -]{7,20}" required>
+
+          <label for="area">Building Area (m²) *</label>
+          <input id="area" name="area" type="number"
+            min="20" max="100000" placeholder="250" required>
+
+          <label for="budget">Budget Constraints *</label>
+          <select id="budget" name="budget" required>
+            <option value="">Select your budget</option>
+            <option value="small">Under $100,000</option>
+            <option value="medium">$100,000 – $500,000</option>
+            <option value="large">Above $500,000</option>
+          </select>
+
+          <button class="btn" type="submit">Submit Inquiry ↗</button>
+          <p class="note">Demo form: data is not stored or sent.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="logo" href="#home">FORMA<span>.</span></a>
+        <p>Architecture for a better tomorrow.</p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+
+      <div class="footer-legal">
+        <p>Registration details: available upon verification.</p>
+        <p>Publications:
+          <a href="https://www.archdaily.com/">ArchDaily</a> ·
+          <a href="https://www.dezeen.com/">Dezeen</a>
+        </p>
+        <label for="theme-switch" class="theme-button">
+          ◐ Switch Light / Dark Theme
+        </label>
+        <p>© 2026 FORMA. Academic demonstration.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
